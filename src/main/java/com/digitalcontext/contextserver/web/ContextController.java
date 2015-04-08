@@ -18,6 +18,7 @@ import com.digitalcontext.contextserver.web.response.ResponseStatus;
 public class ContextController {
 	
 	private static final Logger logger = Logger.getLogger(ContextController.class);
+	
 	@Autowired
 	ContextService contextService;
 	

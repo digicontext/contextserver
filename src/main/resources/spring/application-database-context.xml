@@ -35,6 +35,12 @@
 
 	<bean id="contextDao" class="com.digitalcontext.contextserver.dao.impl.ContextDaoImpl">
 	</bean>
+
+	<bean id="userDao" class="com.digitalcontext.contextserver.dao.impl.UserDaoImpl">
+	</bean>
+	
+	<bean id="authTypeDao" class="com.digitalcontext.contextserver.dao.impl.AuthenticationTypeDaoImpl">
+	</bean>
 	
 	<bean id="contextAccessDao" class="com.digitalcontext.contextserver.dao.impl.ContextAccessDaoImpl">
 	</bean>			

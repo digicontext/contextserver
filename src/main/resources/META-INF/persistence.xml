@@ -8,11 +8,11 @@
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<class>com.digitalcontext.contextserver.model.Context</class>
-		<class>com.digitalcontext.contextserver.model.Account</class>
-		<class>com.digitalcontext.contextserver.model.BusinessUnit</class>		
+		<class>com.digitalcontext.contextserver.model.ContextAccess</class>		
 		<class>com.digitalcontext.contextserver.model.ContextType</class>		
-		<class>com.digitalcontext.contextserver.model.ActionType</class>
-		<class>com.digitalcontext.contextserver.model.ContextAccess</class>									
+		<class>com.digitalcontext.contextserver.model.User</class>
+		<class>com.digitalcontext.contextserver.model.AuthenticationType</class>
+																																																
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 			<!-- value="create" to build a new database on each run; value="update" 

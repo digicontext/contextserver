@@ -8,8 +8,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-import org.springframework.transaction.annotation.Transactional;
-
 import com.digitalcontext.contextserver.dao.GenericDao;
 
 public abstract class GenericDaoImpl<T> implements GenericDao<T> {

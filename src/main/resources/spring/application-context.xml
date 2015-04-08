@@ -28,6 +28,9 @@
 	<bean id="contextService" class="com.digitalcontext.contextserver.service.impl.ContextServiceImpl">
 	</bean>	
 
+	<bean id="userService" class="com.digitalcontext.contextserver.service.impl.UserServiceImpl">
+	</bean>	
+
 	<bean id="contextAccessService" class="com.digitalcontext.contextserver.service.impl.ContextAccessServiceImpl">
 	</bean>			 	
  </beans>

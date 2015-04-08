@@ -36,22 +36,14 @@ public class Context {
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "type")	
 	private ContextType contextType;
-	
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "action_type")	
-	private ActionType actionType;
-	
-	@ManyToOne(fetch = FetchType.EAGER)	
-	@JoinColumn(name = "business_unit")		
-	private BusinessUnit businessUnit;
-	
+			
 	@Column(name = "status")				
 	private int status;
 	
 	@Column(name = "landing_page")	
 	private String landingPage;
 	
-	@JsonIgnore	
+	@JsonIgnore
 	@Column(name = "create_time", columnDefinition = "DATETIME")
 	@Temporal(TemporalType.TIMESTAMP)	
 	private Date createTime;
@@ -104,12 +96,7 @@ public class Context {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public ActionType getActionType() {
-		return actionType;
-	}
-	public void setActionType(ActionType actionType) {
-		this.actionType = actionType;
-	}
+	
 	public int getStatus() {
 		return status;
 	}
@@ -122,12 +109,6 @@ public class Context {
 	}
 	public void setContextType(ContextType contextType) {
 		this.contextType = contextType;
-	}
-	public BusinessUnit getBusinessUnit() {
-		return businessUnit;
-	}
-	public void setBusinessUnit(BusinessUnit businessUnit) {
-		this.businessUnit = businessUnit;
 	}
 	
 	@Override
@@ -160,8 +141,7 @@ public class Context {
 	public String toString() {
 		return "Context [id=" + id + ", contextId=" + contextId + ", name="
 				+ name + ", description=" + description + ", contextType="
-				+ contextType + ", actionType=" + actionType
-				+ ", businessUnit=" + businessUnit 
+				+ contextType
 				+ ", status=" + status
 				+ ", landingPage=" + landingPage + ", createTime=" + createTime
 				+ ", updateTime=" + updateTime + "]";

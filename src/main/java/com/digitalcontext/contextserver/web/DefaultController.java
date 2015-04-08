@@ -10,6 +10,6 @@ public class DefaultController {
 
 	@RequestMapping(method=RequestMethod.GET)	
 	public String getDefaultMessage() {
-		return "Welcome to Context Server";
+		return "Welcome to DigitalContext Context Server";
 	}
 }
